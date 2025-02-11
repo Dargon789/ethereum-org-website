@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server"
-
+import _ from "lodash";
 import { DEFAULT_LOCALE, FAKE_LOCALE, LOCALES_CODES } from "./lib/constants"
 
 const PUBLIC_FILE = /\.(.*)$/
@@ -32,7 +32,8 @@ export const config = {
   ],
 }
 
-const doubleLocaleRegex = new RegExp(`^/(${LOCALES_CODES.join("|")})/.*`, "i")
+const sanitizedLocales = LOCALES_CODES.map(locale => _.escapeRegExp(locale));
+const doubleLocaleRegex = new RegExp(`^/(${sanitizedLocales.join("|")})/.*`, "i")
 
 // Middleware required to always display the locale prefix in the URL. It
 // redirects to the default locale if the locale is not present in the URL
