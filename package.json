@@ -93,7 +93,8 @@
     "tailwindcss-animate": "^1.0.7",
     "usehooks-ts": "^3.1.0",
     "vaul": "^1.0.0",
-    "yaml-loader": "^0.8.0"
+    "yaml-loader": "^0.8.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.4.1",
