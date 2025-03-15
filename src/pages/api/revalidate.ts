@@ -42,7 +42,7 @@ export default async function handler(
           try {
             await res.revalidate(localePath)
           } catch (err) {
-            console.error(`Error revalidating ${localePath}`, err)
+            console.error("Error revalidating %s", localePath, err)
             throw new Error(`Error revalidating ${localePath}`)
           }
         })
