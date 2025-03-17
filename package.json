@@ -28,7 +28,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.8.0",
+    "@chakra-ui/react": "^3.8.1",
     "@crowdin/crowdin-api-client": "^1.25.0",
     "@docsearch/react": "^3.5.2",
     "@emotion/react": "^11.11.1",
