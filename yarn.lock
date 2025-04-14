@@ -3610,10 +3610,10 @@
   resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-5.8.0.tgz#4b8e630d43868cd0cb8cdb8f1f6de2ea60b36df4"
   integrity sha512-1hduTMFYkZRSqRAPK1+5A6T/uc543PfxX0erzJEVWb9fKgPlY24ZQMi2nXBwlQ6JlBYjZJcMEtN2vhhNqyjgXA==
 
-"@next/bundle-analyzer@^15.1.6":
-  version "15.1.7"
-  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-15.1.7.tgz#bd64c2a17b973562e6afc150a5e2901cba0c8827"
-  integrity sha512-tESiAwTUEpzzxKMLDbQuPHvD+PFDjY+0O3R4T5bpjIo0cr5fvppbbllQbtksQbBEquT55Eu8JmDoOlc9YFv6Kw==
+"@next/bundle-analyzer@^15.2.3":
+  version "15.3.0"
+  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-15.3.0.tgz#b4769a490b420d3d281c512ea80d7e471bf6b7d1"
+  integrity sha512-t1dn32bTBJTfksh2xLfpaw6hNNNrw1rsr1GlVSkRbJ5626YgEMFBjuos5tHr6l9/b+jKz1HFYFlWNgrIHqCslw==
   dependencies:
     webpack-bundle-analyzer "4.10.1"
 
