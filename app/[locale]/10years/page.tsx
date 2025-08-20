@@ -15,31 +15,41 @@ import Translation from "@/components/Translation"
 import { ButtonLink } from "@/components/ui/buttons/Button"
 import { LinkBox, LinkOverlay } from "@/components/ui/link-box"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import YouTube from "@/components/YouTube"
 
 import { cn } from "@/lib/utils/cn"
 import { dataLoader } from "@/lib/utils/data/dataLoader"
 import { getMetadata } from "@/lib/utils/metadata"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
+// Import static torch holders data
+import torchHoldersData from "@/data/torchHolders.json"
+
 import { BASE_TIME_UNIT } from "@/lib/constants"
 
 import AdoptionSwiper from "./_components/AdoptionSwiper/lazy"
-import CountDown from "./_components/CountDown/lazy"
 import { adoptionStyles } from "./_components/data"
 import InnovationSwiper from "./_components/InnovationSwiper/lazy"
-import TenYearGlobe from "./_components/TenYearGlobe/lazy"
+import NFTMintCard from "./_components/NFTMintCard"
 import TenYearHero from "./_components/TenYearHero"
+import TorchHistorySwiper from "./_components/TorchHistorySwiper/lazy"
 import Stories from "./_components/UserStories/lazy"
 import {
   getAdoptionCards,
   getInnovationCards,
-  getTimeUnitTranslations,
   parseStoryDates,
 } from "./_components/utils"
 
+import { routing } from "@/i18n/routing"
 import { fetch10YearEvents } from "@/lib/api/fetch10YearEvents"
 import { fetch10YearStories } from "@/lib/api/fetch10YearStories"
-import TenYearLogo from "@/public/images/10-year-anniversary/10-year-logo.png"
+import {
+  getHolderEvents,
+  getTransferEvents,
+  isAddressFiltered,
+  type TorchHolder,
+} from "@/lib/torch"
+import Curved10YearsText from "@/public/images/10-year-anniversary/10y-torch-heading.svg"
 
 // In seconds
 const REVALIDATE_TIME = BASE_TIME_UNIT * 1
@@ -61,6 +71,8 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
 
   const [fetched10YearEvents, fetched10YearStories] = await loadData()
 
+  const allTorchHolders: TorchHolder[] = torchHoldersData as TorchHolder[]
+
   const stories = parseStoryDates(fetched10YearStories, locale)
 
   // Get i18n messages
@@ -73,58 +85,70 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
     namespace: "page-10-year-anniversary",
   })
 
-  const timeLeftLabels = await getTimeUnitTranslations()
   const innovationCards = await getInnovationCards()
   const adoptionCards = await getAdoptionCards()
+
+  // Torch NFT data fetching logic
+  const transferEvents = getTransferEvents()
+
+  const torchHolderMap: Record<string, (typeof allTorchHolders)[0]> =
+    allTorchHolders.reduce(
+      (acc, holder) => {
+        acc[holder.address.toLowerCase()] = holder
+        return acc
+      },
+      {} as Record<string, (typeof allTorchHolders)[0]>
+    )
+
+  const torchHoldersEvents = await getHolderEvents(
+    torchHolderMap,
+    transferEvents
+  )
+
+  // Filter out events where the address is in the filtered list
+  const torchHolders = torchHoldersEvents.filter(
+    (holder) => !isAddressFiltered(holder.address)
+  )
 
   return (
     <MainArticle className="mx-auto flex w-full flex-col items-center">
       <TenYearHero locale={locale} />
 
-      <div className="mt-16 flex w-full flex-col gap-16 px-8 py-4 md:flex-row md:py-8">
+      <div
+        className={cn(
+          "mt-16 flex w-full flex-col gap-32 px-4 py-4 md:flex-row md:py-8"
+        )}
+      >
         <div className="flex flex-1 flex-col gap-5">
           <div>
             <h1 className="text-2xl font-bold">
               {t("page-10-year-hero-title")}
             </h1>
           </div>
+
           <div className="flex flex-1 flex-col gap-4">
             <p className="text-lg">{t("page-10-year-hero-description")}</p>
             <p className="text-lg">{t("page-10-year-hero-tagline")}</p>
           </div>
         </div>
         <div className="flex flex-1 flex-row items-center justify-center">
-          {/* CLIENT SIDE, lazy loaded */}
-          <CountDown
-            timeLeftLabels={timeLeftLabels}
-            expiredLabel={t("page-10-year-countdown-expired")}
-          />
+          <NFTMintCard />
         </div>
       </div>
 
       <div className="w-full px-4 py-8 md:px-8">
-        <div className="flex min-h-[500px] flex-col items-center gap-4 rounded-4xl bg-radial-a px-8 pt-8 lg:px-14 lg:pt-14">
-          <div className="flex max-w-[770px] flex-col gap-4 text-center">
+        <div className="flex flex-col items-center gap-4 rounded-4xl bg-radial-a px-4 pt-8 lg:px-14 lg:pt-14">
+          <div className="flex flex-col gap-4 text-center">
             <h2 className="text-4xl font-black">
-              {t("page-10-year-join-party-title")}
+              {t("page-10-year-livestream-title")}
             </h2>
-            <p className="text-md">
-              {t("page-10-year-join-party-description")}
-            </p>
           </div>
-          <div className="h-[max(fit,260px)] sm:h-[400px] md:h-[500px] lg:h-[600px]">
-            {/* CLIENT SIDE, lazy loaded */}
-            <TenYearGlobe
-              actionLabel={t("page-10-year-globe-go-to-event")}
-              events={Object.values(fetched10YearEvents).flatMap((region) =>
-                region.events.map((event) => ({
-                  ...event,
-                  lat: Number(event.lat),
-                  lng: Number(event.lng),
-                }))
-              )}
-            />
-          </div>
+          <YouTube
+            className="w-full max-w-none"
+            id="igPIMF1p5Bo"
+            title={t("page-10-year-livestream-video-title")}
+            poster="maxresdefault"
+          />
         </div>
       </div>
 
@@ -220,23 +244,75 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
           </Tabs>
         </div>
       </div>
-      <div className="flex w-full flex-col-reverse gap-8 px-8 py-8 md:flex-row">
-        <div className="flex flex-1 flex-col gap-4 md:gap-8 md:pt-8">
-          <p>{t("page-10-year-events-description-1")}</p>
-          <p>{t("page-10-year-events-description-2")}</p>
+
+      <div
+        id="torch-history"
+        className="my-32 flex w-full scroll-mt-32 flex-col bg-gradient-to-b from-[#161A36] via-[#161A36] via-60% to-[#9C63F8] md:rounded-3xl"
+      >
+        <div className="p-8">
+          <div className="relative">
+            <div className="flex items-center justify-center pt-12 sm:pt-24">
+              <div className="relative max-h-[380px] max-w-[380px]">
+                <video
+                  className="pointer-events-none select-none"
+                  src="/videos/torch.mp4"
+                  aria-label="Torch video"
+                  autoPlay
+                  loop
+                  muted
+                  poster="/images/10-year-anniversary/torch-cover.png"
+                  controlsList="nodownload"
+                  disablePictureInPicture
+                  playsInline
+                />
+                <div className="pointer-events-none absolute top-0 h-full w-full select-none bg-[url('/images/10-year-anniversary/torch-overlay.png')] bg-contain bg-center bg-no-repeat" />
+              </div>
+            </div>
+            {/* Curved text */}
+            <Curved10YearsText
+              viewBox="0 0 356 186"
+              className="absolute left-1/2 top-0 h-min w-full max-w-[600px] -translate-x-1/2"
+              width="100%"
+              height="auto"
+            />
+          </div>
         </div>
-        <div className="flex flex-1 flex-col items-center gap-4 rounded-2xl bg-gradient-step-1 p-8">
-          <h2 className="text-2xl font-bold">
-            {t("page-10-year-host-event-title")}
-          </h2>
-          <p className="text-md">{t("page-10-year-host-event-description")}</p>
-          <ButtonLink href="https://10yearsofethereum.paperform.co" hideArrow>
-            {t("page-10-year-host-event-cta")}
-          </ButtonLink>
+
+        <TorchHistorySwiper
+          holders={torchHolders}
+          currentHolderAddress={null}
+        />
+
+        <div className="flex flex-col gap-12 px-8 pb-24 pt-12 text-body-inverse sm:px-16 md:flex-row dark:text-body">
+          <div className="flex flex-1 flex-col gap-8">
+            <p>
+              <Translation
+                id="page-10-year-torch-nft-intro"
+                ns="page-10-year-anniversary"
+              />
+            </p>
+
+            <p>{t("page-10-year-torch-nft-description")}</p>
+          </div>
+          <div className="flex flex-1 flex-col gap-8">
+            <div>
+              <h3 className="text-lg font-bold">
+                {t("page-10-year-torch-one-of-kind-title")}
+              </h3>
+              <p>{t("page-10-year-torch-one-of-kind-description")}</p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold">
+                {t("page-10-year-torch-time-limited-title")}
+              </h3>
+              <p>{t("page-10-year-torch-time-limited-description")}</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="flex w-full flex-col items-center gap-8 px-8 py-8 pt-32 lg:flex-row">
+      <div className="flex w-full flex-col items-center gap-8 px-8 py-8 lg:flex-row">
         <div className="flex flex-1 flex-col gap-6">
           <h2 className="flex flex-col gap-2 font-black">
             <span className="text-4xl text-accent-a">
@@ -336,23 +412,14 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
           <Stories stories={stories} />
         </I18nProvider>
       </div>
-
-      <div className="w-full gap-8 px-8 py-8 pt-32">
-        <div className="flex flex-col items-center gap-4 rounded-2xl bg-ten-year-gradient p-8">
-          <Image
-            src={TenYearLogo}
-            alt="10 year anniversary logo"
-            className="mb-8 max-h-80 object-contain sm:mb-12"
-          />
-          <h3>{t("page-10-year-ideas-title")}</h3>
-          <p>{t("page-10-year-ideas-description")}</p>
-          <ButtonLink href="mailto:10years@ethereum.org">
-            {t("page-10-year-ideas-cta")}
-          </ButtonLink>
-        </div>
-      </div>
     </MainArticle>
   )
+}
+
+export async function generateStaticParams() {
+  return routing.locales.map((locale) => ({
+    locale,
+  }))
 }
 
 export async function generateMetadata({
