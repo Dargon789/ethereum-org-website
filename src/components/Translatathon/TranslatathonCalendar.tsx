@@ -33,7 +33,7 @@ const events = [
       "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGRpZWo3Y3E4a2d2dWVqMjdjNnFtZzZzZTEgY185ZTRiMWIyNzYwNzQzNDYzODE2MTAwYTE2OWQxNDI0MzAzNTJhN2NmYzMzNDRiMWU3ODVkYjUyMzg1YzlmZDM2QGc&tmsrc=c_9e4b1b2760743463816100a169d142430352a7cfc3344b1e785db52385c9fd36%40group.calendar.google.com",
   },
   {
-    date: "2024-08-09T12:00:00Z",
+    date: "2025-08-25T12:00:00Z",
     title: "Translatathon kickoff call",
     calendarLink:
       "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjU5dDRoNW9yNG0waDM3bjY0dDJmNWx2dmsgY185ZTRiMWIyNzYwNzQzNDYzODE2MTAwYTE2OWQxNDI0MzAzNTJhN2NmYzMzNDRiMWU3ODVkYjUyMzg1YzlmZDM2QGc&tmsrc=c_9e4b1b2760743463816100a169d142430352a7cfc3344b1e785db52385c9fd36%40group.calendar.google.com",
