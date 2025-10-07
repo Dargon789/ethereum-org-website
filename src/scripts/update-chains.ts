@@ -1,4 +1,4 @@
-import { execSync } from "child_process"
+import { execSync, execFileSync } from "child_process"
 import fs from "fs"
 import path from "path"
 
@@ -84,7 +84,7 @@ export const updateChainsTsFile = async () => {
   console.log(`Generated/updated ${chainsTsPath}`)
 
   // Run auto-linter on updated TypeScript file
-  execSync(`npx prettier ${chainsTsPath} --write`)
+  execFileSync("npx", ["prettier", chainsTsPath, "--write"])
 }
 
 updateChainsTsFile()
