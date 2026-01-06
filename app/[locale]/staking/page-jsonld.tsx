@@ -9,6 +9,7 @@ import {
   ethereumFoundationOrganization,
 } from "@/lib/utils/jsonld"
 import { normalizeUrlForJsonLd } from "@/lib/utils/url"
+import he from "he"
 
 export default async function StakingPageJsonLD({
   locale,
@@ -97,9 +98,8 @@ export default async function StakingPageJsonLD({
             name: t("page-staking-faq-4-question"),
             acceptedAnswer: {
               "@type": "Answer",
-              text: `${t("page-staking-faq-4-answer-p1")} ${t("page-staking-faq-4-answer-p2")} ${t("page-staking-faq-4-answer-p3")}`.replace(
-                /<[^>]*>/g,
-                ""
+              text: he.escape(
+                `${t("page-staking-faq-4-answer-p1")} ${t("page-staking-faq-4-answer-p2")} ${t("page-staking-faq-4-answer-p3")}`
               ),
             },
           },
@@ -108,9 +108,8 @@ export default async function StakingPageJsonLD({
             name: t("page-staking-faq-5-question"),
             acceptedAnswer: {
               "@type": "Answer",
-              text: `${t("page-staking-faq-5-answer-p1")} ${t("page-staking-faq-5-answer-p2")}`.replace(
-                /<[^>]*>/g,
-                ""
+              text: he.escape(
+                `${t("page-staking-faq-5-answer-p1")} ${t("page-staking-faq-5-answer-p2")}`
               ),
             },
           },
@@ -119,7 +118,7 @@ export default async function StakingPageJsonLD({
             name: t("page-staking-faq-1-question"),
             acceptedAnswer: {
               "@type": "Answer",
-              text: t("page-staking-faq-1-answer").replace(/<[^>]*>/g, ""),
+              text: he.escape(t("page-staking-faq-1-answer")),
             },
           },
           {
@@ -127,7 +126,7 @@ export default async function StakingPageJsonLD({
             name: t("page-staking-faq-2-question"),
             acceptedAnswer: {
               "@type": "Answer",
-              text: t("page-staking-faq-2-answer").replace(/<[^>]*>/g, ""),
+              text: he.escape(t("page-staking-faq-2-answer")),
             },
           },
           {
@@ -135,9 +134,8 @@ export default async function StakingPageJsonLD({
             name: t("page-staking-faq-3-question"),
             acceptedAnswer: {
               "@type": "Answer",
-              text: `${t("page-staking-faq-3-answer-p1")} ${t("page-staking-faq-3-answer-p2")}`.replace(
-                /<[^>]*>/g,
-                ""
+              text: he.escape(
+                `${t("page-staking-faq-3-answer-p1")} ${t("page-staking-faq-3-answer-p2")}`
               ),
             },
           },
