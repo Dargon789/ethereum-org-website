@@ -171,7 +171,7 @@ Gäbe es an Handelsplatz B kurzfristig zu wenig Angebot von Assets, wodurch Sie 
 
 Um das obige Beispiel in der etablierten Finanzwelt umzusetzen, benötigten Sie sehr viel Geld. Diese Strategien des Geldverdienens sind jenen mit großem bestehenden Vermögen vorbehalten. Flash Loans sind ein Beispiel einer Zukunft, in der der Besitz von Geld nicht die Voraussetzung dafür ist, Geld zu verdienen.
 
-<ButtonLink isSecondary href="https://aave.com/docs/concepts/flash-loans/">
+<ButtonLink isSecondary href="https://aave.com/docs/aave-v3/guides/flash-loans">
   Mehr zu Flash Loans
 </ButtonLink>
 
@@ -323,7 +323,7 @@ Ethereum ist aus mehreren Gründen die perfekte Grundlage für DeFi:
 DeFi ist praktisch ein Ebenenmodell:
 
 1. Die Blockchain: Ethereum enthält den Transaktionsverlauf und den Status der Konten.
-2. Die Assets: [ETH](/eth/) und die anderen Token (Währungen).
+2. Die Assets: [ETH](/what-is-ether/) und die anderen Token (Währungen).
 3. Die Protokolle – [Smart Contracts](/glossary/#smart-contract), die die Funktionalität bereitstellen, z.B. einen Dienst, der die dezentrale Ausleihe von Vermögenswerten ermöglicht.
 4. [Die Anwendungen](/apps/): Produkte die wir benutzen, um Protokolle zu verwalten und auf diese zuzugreifen.
 

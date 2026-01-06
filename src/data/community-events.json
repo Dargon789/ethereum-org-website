@@ -53,7 +53,7 @@
     "href": "https://ethaccra.xyz",
     "location": "Accra, GHA",
     "description": "ETHAccra",
-    "imageUrl": "http://eth-accra-website.vercel.app/assets/pngs/meta_image.png"
+    "imageUrl": "https://ethaccra.xyz/assets/pngs/meta_image.png"
   },
   {
     "title": "ETHTokyo",
@@ -191,7 +191,8 @@
     "href": "https://ethrome.org",
     "location": "Rome, ITA",
     "description": "The hackathon for builders by builders",
-    "imageUrl": "https://www.ethrome.org/opengraph-image.png"
+    "imageUrl": "https://www.ethrome.org/opengraph-image.png",
+    "hackathon": true
   },
   {
     "title": "Urbe Village",
@@ -204,12 +205,32 @@
   },
   {
     "title": "ETH Latam",
+    "startDate": "2025-11-06",
+    "endDate": "2025-11-07",
+    "href": "https://ethlatam.org",
+    "location": "São Paulo, BR",
+    "description": "Real World Ethereum Hackathon: A 2-day hackathon powered by ETH Samba—with 500 hackers building real use cases.",
+    "imageUrl": "https://taikai.azureedge.net/n2se9-rYN3sttTYTA8x8287JQJxQiijLJVJ5JOakN9I/rs:fit:1280:0:0/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3RhaWthaS1zdG9yYWdlL2ltYWdlcy9hNzIzNjBmMC02OTRjLTExZjAtOTE1Yi1kN2Q0MTViMDk4NjlQb3J0YWRhLnBuZw",
+    "hackathon": true
+  },
+  {
+    "title": "ETH Latam",
     "startDate": "2025-11-08",
     "endDate": "2025-11-09",
     "href": "https://ethlatam.org",
     "location": "São Paulo, BR",
     "description": "ETH Latam is a gathering place for builders and enthusiasts of Ethereum in Latin America.",
     "imageUrl": "https://strapi.ethkipu.org/uploads/Metadata_ETH_Latam_2025_ING_759a4fae04.png"
+  },
+  {
+    "title": "ETHGlobal Buenos Aires",
+    "startDate": "2025-11-21",
+    "endDate": "2025-11-23",
+    "href": "https://ethglobal.com/events/buenosaires",
+    "location": "Buenos Aires, ARG",
+    "description": "ETHGlobal's long awaited return to Argentina! Bringing developers onchain to build the future of the internet.",
+    "imageUrl": "https://ethglobal.b-cdn.net/events/buenosaires/images/un4u4/default.jpg",
+    "hackathon": true
   },
   {
     "title": "DevConnect",
@@ -222,11 +243,93 @@
   },
   {
     "title": "ETH Riyadh",
-    "startDate": "2025-12-3",
-    "endDate": "2025-12-4",
+    "startDate": "2026-02-01",
+    "endDate": "2026-02-28",
     "href": "https://ethriyadh.com/",
     "location": "Riyadh, KSA",
-    "description": "ETH Riyadh 2025 will reconvene as the Middle East’s premier Web3 summit, uniting global luminaries from the Ethereum and blockchain ecosystems in Riyadh.",
+    "description": "ETH Riyadh 2025 will reconvene as the Middle East’s premier Web3 summit, uniting global luminaries from the Ethereum and blockchain ecosystems in Riyadh. February 2026, details TBD.",
     "imageUrl": "https://d1u25r3n8sm37o.cloudfront.net/wrold3ai/riyadh2025.jpg"
+  },
+  {
+    "title": "Pragma Cannes 2026",
+    "startDate": "2026-04-02",
+    "endDate": "2026-04-02",
+    "href": "https://ethglobal.com/events/pragma-cannes2026",
+    "location": "Cannes, FRA",
+    "description": "Pragma is designed to be a different kind of event. We bring together a small group of founders and builders to discuss the future of web3 and reflect on the past.",
+    "imageUrl": "https://ethglobal.b-cdn.net/events/pragma-cannes2026/images/p1uij/default.jpg"
+  },
+  {
+    "title": "ETHGlobal Cannes 2026",
+    "startDate": "2026-04-03",
+    "endDate": "2026-04-05",
+    "href": "https://ethglobal.com/events/cannes2026",
+    "location": "Cannes, FRA",
+    "description": "ETHGlobal hackathons enable you to experiment with cutting edge web3 technologies and develop an idea you're passionate about. This is your opportunity to learn about crypto, expand your network, meet industry professionals, and find like-minded people who are collectively creating a new kind of web.",
+    "imageUrl": "https://s1.directupload.eu/images/251215/cuamhj9c.png"
+  },
+  {
+    "title": "ETHPrague",
+    "startDate": "2026-05-08",
+    "endDate": "2026-05-10",
+    "href": "https://ethprague.com/",
+    "location": "Prague, CZ",
+    "description": "ETHPrague is an event focused on the future of Ethereum and potential concepts or applications that don't yet exist.",
+    "imageUrl": "https://ethprague.com/ETHPrague_soc_share_2026.png",
+    "hackathon": true
+  },
+  {
+    "title": "ETHConf",
+    "startDate": "2026-06-08",
+    "endDate": "2026-06-10",
+    "href": "https://ethconf.com/",
+    "location": "New York, USA",
+    "description": "Join 5,000+ founders, speakers, industry leaders, companies, and builders shaping the future of Ethereum in New York City",
+    "imageUrl": "https://ethconf.com/ethconf-og.jpg"
+  },
+  {
+    "title": "ETHGlobal New York 2026",
+    "startDate": "2026-06-12",
+    "endDate": "2026-06-14",
+    "href": "https://ethglobal.com/events/newyork2026",
+    "location": "New York, USA",
+    "description": "ETHGlobal hackathons enable you to experiment with cutting edge web3 technologies and develop an idea you're passionate about. This is your opportunity to learn about crypto, expand your network, meet industry professionals, and find like-minded people who are collectively creating a new kind of web.",
+    "imageUrl": "https://s1.directupload.eu/images/251215/lzimboua.png"
+  },
+  {
+    "title": "Pragma Lisbon 2026",
+    "startDate": "2026-07-23",
+    "endDate": "2026-07-23",
+    "href": "https://ethglobal.com/events/pragma-lisbon2026",
+    "location": "Lisbon, PRT",
+    "description": "Pragma is designed to be a different kind of event. We bring together a small group of founders and builders to discuss the future of web3 and reflect on the past.",
+    "imageUrl": "https://ethglobal.b-cdn.net/events/pragma-lisbon2026/images/um0uw/default.jpg"
+  },
+  {
+    "title": "ETHGlobal Lisbon 2026",
+    "startDate": "2026-07-24",
+    "endDate": "2026-07-26",
+    "href": "https://ethglobal.com/events/lisbon2026",
+    "location": "Lisbon, PRT",
+    "description": "ETHGlobal hackathons enable you to experiment with cutting edge web3 technologies and develop an idea you're passionate about. This is your opportunity to learn about crypto, expand your network, meet industry professionals, and find like-minded people who are collectively creating a new kind of web.",
+    "imageUrl": "https://s1.directupload.eu/images/251215/j7hwvdg4.png"
+  },
+  {
+    "title": "Pragma Tokyo 2026",
+    "startDate": "2026-09-24",
+    "endDate": "2026-09-24",
+    "href": "https://ethglobal.com/events/pragma-tokyo2026",
+    "location": "Tokyo, JPN",
+    "description": "Pragma is designed to be a different kind of event. We bring together a small group of founders and builders to discuss the future of web3 and reflect on the past.",
+    "imageUrl": "https://ethglobal.b-cdn.net/events/pragma-tokyo2026/images/wz3ri/default.jpg"
+  },
+  {
+    "title": "ETHGlobal Tokyo 2026",
+    "startDate": "2026-09-25",
+    "endDate": "2026-09-27",
+    "href": "https://ethglobal.com/events/tokyo2026",
+    "location": "Tokyo, JPN",
+    "description": "ETHGlobal hackathons enable you to experiment with cutting edge web3 technologies and develop an idea you're passionate about. This is your opportunity to learn about crypto, expand your network, meet industry professionals, and find like-minded people who are collectively creating a new kind of web.",
+    "imageUrl": "https://s1.directupload.eu/images/251215/arnyosxw.png"
   }
 ]

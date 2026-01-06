@@ -171,7 +171,7 @@ Ako bi potražnja menjačnice B naglo opala i korisnik ne može da kupi dovoljno
 
 Da biste mogli da izvedete gornji primer u tradicionalnom finansijskom svetu, bila bi vam potrebna ogromna količina novca. Ovakve strategije za pravljenje novca dostupne su samo onima koji već imaju bogatstvo. Brzi zajmovi su primer budućnosti u kojima posedovanje novca nije nužno uslov za zaradu novca.
 
-<ButtonLink isSecondary href="https://aave.com/docs/concepts/flash-loans/">
+<ButtonLink isSecondary href="https://aave.com/docs/aave-v3/guides/flash-loans">
   Više informacija o brzim zajmovima
 </ButtonLink>
 
@@ -323,7 +323,7 @@ Ethereum je savršena osnova za DeFi zbog mnogobrojnih razloga:
 Možete misliti o decentralizovanim finansijama u nivoima:
 
 1. Lanac blokova — Ethereum sadrži istoriju transakcija i stanja računa.
-2. Sredstva — [ETH](/eth/)i drugi tokeni (valute).
+2. Sredstva — [ETH](/what-is-ether/)i drugi tokeni (valute).
 3. Protokoli — [pametni ugovori](/glossary/#smart-contract)koji pružaju funkcionalnost, na primer uslugu koja omogućava decentralizovano pozajmljivanje sredstava.
 4. [Aplikacije](/apps/) — proizvodi koje koristimo da upravljamo i pristupamo protokolima.
 

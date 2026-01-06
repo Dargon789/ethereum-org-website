@@ -172,7 +172,7 @@ Si l'échange B chutait soudainement et que l'utilisateur n'était pas en mesure
 
 Pour pouvoir faire ce qui précède dans le monde de la finance traditionnelle, vous auriez besoin d'une somme d'argent énorme. Ces stratégies pour gagner de l'argent ne sont accessibles qu'à ceux qui possèdent déjà une certaine richesse. Les prêts Flash sont un exemple d'avenir où avoir de l'argent n'est pas nécessairement une condition préalable pour gagner de l'argent.
 
-<ButtonLink isSecondary href="https://aave.com/docs/concepts/flash-loans/">
+<ButtonLink isSecondary href="https://aave.com/docs/aave-v3/guides/flash-loans">
   Plus d'infos sur les prêts Flash
 </ButtonLink>
 
@@ -324,7 +324,7 @@ Ethereum est la fondation parfaite pour la DeFi pour plusieurs raisons:
 Vous pouvez voir la DeFi comme des couches :
 
 1. La Blockchain, Ethereum qui trace l'historique des transactions et les états de comptes.
-2. Les actifs [ETH](/eth/) et autres jetons (devises).
+2. Les actifs [ETH](/what-is-ether/) et autres jetons (devises).
 3. Les protocoles, [contrats intelligents](/glossary/#smart-contract) qui offrent des fonctionnalités comme les prêts d'actifs décentralisés.
 4. [Les applications](/apps/) les produits que vous utilisez pour accéder et gérer les protocoles.
 

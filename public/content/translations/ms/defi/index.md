@@ -171,7 +171,7 @@ Jika bekalan bursa B merosot secara tiba-tiba dan pengguna tidak dapat membeli c
 
 Untuk dapat melakukan contoh di atas dalam dunia kewangan tradisional, anda memerlukan sejumlah besar wang. Strategi menjana wang ini hanya boleh diakses oleh mereka yang mempunyai kekayaan sedia ada. Pinjaman kilat adalah contoh masa depan di mana mempunyai wang tidak semestinya prasyarat untuk membuat wang.
 
-<ButtonLink isSecondary href="https://aave.com/docs/concepts/flash-loans/">
+<ButtonLink isSecondary href="https://aave.com/docs/aave-v3/guides/flash-loans">
   Lebih lanjut mengenai pinjaman kilat
 </ButtonLink>
 
@@ -323,7 +323,7 @@ Ethereum ialah asas yang sempurna untuk DeFi atas beberapa sebab:
 Anda boleh memikirkan DeFi dalam lapisan:
 
 1. Blok rantai – Ethereum mengandungi sejarah transaksi dan keadaan akaun.
-2. Aset – [ETH](/eth/) dan token lain (mata wang).
+2. Aset – [ETH](/what-is-ether/) dan token lain (mata wang).
 3. Protokol – [kontrak pintar](/glossary/#smart-contract) yang menyediakan kefungsian, contohnya, perkhidmatan yang membenarkan peminjaman aset teragih.
 4. [Aplikasi](/apps/) – produk yang kami gunakan untuk mengurus dan mengakses protokol.
 

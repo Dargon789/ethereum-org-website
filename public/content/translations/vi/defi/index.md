@@ -171,7 +171,7 @@ Nếu nguồn cung của sàn giao dịch B sụt giảm bất ngờ và ngườ
 
 Để có thể thực hiện ví dụ trên trong thế giới tài chính truyền thống, bạn sẽ cần một lượng tiền khổng lồ. Những chiến lược kiếm tiền kiểu này chỉ những người sở hữu sẵn tài sản mới có thể tiếp cận được. Các khoản vay nóng là ví dụ về một tương lai nơi mà việc có tiền không nhất thiết phải là một điều kiện tiên quyết cho việc kiếm tiền.
 
-<ButtonLink isSecondary href="https://aave.com/docs/concepts/flash-loans/">
+<ButtonLink isSecondary href="https://aave.com/docs/aave-v3/guides/flash-loans">
   Đọc thêm về các khoản vay nóng
 </ButtonLink>
 
@@ -323,7 +323,7 @@ Ethereum là nền tảng hoàn hảo cho tài chính phi tập trung vì một 
 Bạn có thể nghĩ về DeFi theo từng lớp:
 
 1. Chuỗi khốiChuỗi khối – Ethereum chứa đựng lịch sử giao dịch và tình trạng hiện thời của các tài khoản.
-2. Các tài sản - [ETH](/eth/) và những loại tokens (tiền tệ) khác.
+2. Các tài sản - [ETH](/what-is-ether/) và những loại tokens (tiền tệ) khác.
 3. Các giao thức – [hợp đồng thông minh](/glossary/#smart-contract) nhằm cung cấp tính năng, ví dụ như một dịch vụ cho phép việc cho vay tài sản một cách phi tập trung.
 4. [Các ứng dụng](/apps/) – những sản phẩm chúng ta dùng để quản lý và tiếp cận các giao thức.
 

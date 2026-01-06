@@ -171,7 +171,7 @@ Idan musanya B darajar sa ya sauka haka kawai kuma mai asusun ya kasa siyan isas
 
 Don iya yin misalin da ke sama a cibiyar hada-hadar kuɗinmu na asali na duniya, kuna buƙatar kuɗaɗe masu yawa. Waɗannan tsalon yin kuɗi ana samun su ne kawai idan akwai wani kuɗi. Rance kamar walkiya misalai ne na zamanin da inda ba lallai sai ana da kuɗi za a sami kuɗi ba.
 
-<ButtonLink isSecondary href="https://aave.com/docs/concepts/flash-loans/">
+<ButtonLink isSecondary href="https://aave.com/docs/aave-v3/guides/flash-loans">
   Ƙari akan rancen flash
 </ButtonLink>
 
@@ -323,7 +323,7 @@ Ethereum shine cikakken tushen DeFi saboda dalilai da yawa:
 Kuna iya tunanin DeFi a cikin wurare:
 
 1. Blockchain - Ethereum tarihin hada-hadar kuɗi ne da matsayin asusun.
-2. Kadarorin – [ETH](/eth/) da sauran kuɗaɗe (kuɗi).
+2. Kadarorin – [ETH](/what-is-ether/) da sauran kuɗaɗe (kuɗi).
 3. Ka'idojin - [smart-contracts](/glossary/#smart-contract)waɗanda ke ba da ayyuka, alal misali, sabis ɗin da ke ba da izinin rarraba rancen kadarorin.
 4. [Aika da su](/apps/) - samfuran da muke amfani da su don sarrafawa da samun damar ƙa'idodin.
 

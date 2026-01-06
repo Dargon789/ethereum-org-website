@@ -6,9 +6,9 @@ lang: en
 
 # Fusaka <Emoji text="🦓" /> {#fusaka}
 
-The Fusaka network upgrade follows [Pectra](/roadmap/pectra/) and brings more new features and improves the experience for every Ethereum user and developer. The name consists of the execution layer upgrade Osaka and the consensus layer version named after the Fulu star. Both parts of Ethereum receive an upgrade that pushes Ethereum scaling, security and user experience to the future.
+**Ethereum's highly anticipated Fusaka upgrade went live on December 3, 2025**
 
-This upgrade is planned for Q4 2025.
+The Fusaka network upgrade follows [Pectra](/roadmap/pectra/) and brings more new features and improves the experience for every Ethereum user and developer. The name consists of the execution layer upgrade Osaka and the consensus layer version named after the Fulu star. Both parts of Ethereum receive an upgrade that pushes Ethereum scaling, security and user experience to the future.
 
 <Alert variant="update">
 <AlertContent>
@@ -296,3 +296,5 @@ Consider the [new 16.7 million limit](https://eips.ethereum.org/EIPS/eip-7825) i
 - [Fusaka testnet blog announcement](https://blog.ethereum.org/2025/09/26/fusaka-testnet-announcement)
 - [Bankless: What Fusaka & Pectra will bring Ethereum](https://www.bankless.com/read/what-fusaka-pectra-will-bring-ethereum)
 - [Bankless: Ethereum's Next Upgrades: Fusaka, Glamsterdam & Beyond with Preston Van Loon](https://x.com/BanklessHQ/status/1956017743289020633?t=502)
+- [The Fusaka Files](https://www.youtube.com/playlist?list=PL4cwHXAawZxpz-erUbKKUnnGoQNdF8s7Z)
+- [PEEPanEIPs Explained](https://www.youtube.com/playlist?list=PL4cwHXAawZxoIenfk7OJry4rxcqX-eqBt)

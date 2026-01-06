@@ -448,10 +448,6 @@
     "path": "/payments/index.md"
   },
   {
-    "id": 2680,
-    "path": "/enterprise/use-cases/index.md"
-  },
-  {
     "id": 2946,
     "path": "/roadmap/beacon-chain/index.md"
   },
@@ -661,7 +657,7 @@
   },
   {
     "id": 2672,
-    "path": "/ethereum-forks/index.md"
+    "path": "/history/index.md"
   },
   {
     "id": 7529,

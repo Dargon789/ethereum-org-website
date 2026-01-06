@@ -17,7 +17,7 @@ jobs:
     # Job steps
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           # Tells the checkout which commit hash to reference
@@ -29,8 +29,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 10
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:

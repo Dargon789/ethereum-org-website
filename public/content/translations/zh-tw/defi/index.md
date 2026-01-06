@@ -172,7 +172,7 @@ Dai、USDC 等穩定幣的價值和美元的差距通常維持在幾美分之內
 
 要在傳統金融體系內完成以上操作，你需要鉅額資金。 這種財產創造策略只有已經擁有財富的人才能操作。 閃電貸的例子告訴我們，未來「有錢」不見得是「賺錢」的先決條件。
 
-<ButtonLink isSecondary href="https://aave.com/docs/concepts/flash-loans/">
+<ButtonLink isSecondary href="https://aave.com/docs/aave-v3/guides/flash-loans">
   深入了解閃電貸
 </ButtonLink>
 
@@ -324,7 +324,7 @@ Dai、USDC 等穩定幣的價值和美元的差距通常維持在幾美分之內
 你可以把去中心化金融想成好幾層：
 
 1. 區塊鏈：以太坊包含了交易記錄和帳戶狀態。
-2. 資產：[以太幣](/eth/)及其他代幣（貨幣）。
+2. 資產：[以太幣](/what-is-ether/)及其他代幣（貨幣）。
 3. 協定：提供功能的[智慧型合約](/glossary/#smart-contract)，例如實現去中心化資產借貸的服務。
 4. [應用程式](/apps/)：我們用以管理及存取協定的產品。
 

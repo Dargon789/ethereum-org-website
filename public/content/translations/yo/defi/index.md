@@ -171,7 +171,7 @@ Tí ipese pẹpẹ ìṣòwò B bá ṣubú lójijì, tí ó sì ṣeé ṣe ki 
 
 Láti lè ṣe àpẹẹrẹ tó wà lókè nínú ayé ìṣúná ibile, wa nílò iye owó tó pọ̀ gan-an. Àwọn ilana riri owó yìí jẹ́ wiwọlé sí fun àwọn tó ní òrò tó wà tẹ́lẹ̀. Àwọn owó yíyá ojú ẹsẹ̀ jẹ apẹẹrẹ ti ọjọ iwaju nibiti nini owo kii ṣe pataki ṣaaju fun riri owo.
 
-<ButtonLink isSecondary href="https://aave.com/docs/concepts/flash-loans/">
+<ButtonLink isSecondary href="https://aave.com/docs/aave-v3/guides/flash-loans">
   Díẹ̀ síi lori àwọn owó yíyá ojú ẹsẹ̀
 </ButtonLink>
 
@@ -323,7 +323,7 @@ Ethereum jẹ́ ipilẹ tó péye fún DeFi fún ọ̀pọ̀ àwọn ìdí:
 O lè ro DeFi gege bi àwọn ìpele:
 
 1. Blockchain náà – Ethereum ní ìtàn ìdunadura àti ipo àwọn àkanti.
-2. Àwọn ohun-ini – [ETH](/eth/) àti àwọn tokin míìran (àwọn owó).
+2. Àwọn ohun-ini – [ETH](/what-is-ether/) àti àwọn tokin míìran (àwọn owó).
 3. Àwọn ìlànà náà – [àdéhùn ọlọ́gbọ́n](/glossary/#smart-contract) tó pèsè iṣẹ́ ṣíṣe, fún àpẹẹrẹ, iṣẹ́ kan tó fúnni láàyè fún yíyani ní àwọn ohun-ini alàílakoso.
 4. [Àwọn ohun èlò náà](/apps/) – àwọn ọjà tí àwa ń lò láti ṣètò àti wọlé sí àwọn ìlànà náà.
 

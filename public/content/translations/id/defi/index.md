@@ -172,7 +172,7 @@ Jika pasokan bursa B menurun secara tiba-tiba dan pengguna tidak dapat membeli d
 
 Agar dapat melakukan contoh di atas dalam dunia keuangan tradisional, Anda akan membutuhkan jumlah yang sangat besar. Strategi penghasil uang ini hanya dapat dijangkau oleh mereka yang memiliki kekayaan. Pinjaman flash adalah sebuah contoh dari masa depan di mana kepemilikan sejumlah uang tidak harus merupakan prasyarat untuk menghasilkan uang.
 
-<ButtonLink isSecondary href="https://aave.com/docs/concepts/flash-loans/">
+<ButtonLink isSecondary href="https://aave.com/docs/aave-v3/guides/flash-loans">
   Lebih lanjut tentang pinjaman flash
 </ButtonLink>
 
@@ -324,7 +324,7 @@ Ethereum adalah fondasi yang sempurna untuk DeFi dikarenakan beberapa alasan:
 Anda dapat membayangkan tentang DeFi dalam lapisan:
 
 1. Blockchain – Ethereum berisi riwayat transaksi dan state akun.
-2. Aset – [ETH](/eth/) dan token lainnya (mata uang).
+2. Aset – [ETH](/what-is-ether/) dan token lainnya (mata uang).
 3. Protokol – [kontrak pintar](/glossary/#smart-contract) yang menyediakan fungsionalitas, misalnya, layanan yang memungkinkan pemberian pinjaman aset yang terdesentralisasi.
 4. [Aplikasi](/apps/) – produk yang kita gunakan untuk mengelola dan mengakses protokol.
 

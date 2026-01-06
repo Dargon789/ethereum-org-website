@@ -171,7 +171,7 @@ Als het aanbod van exchange B plotseling afnam en de gebruiker niet genoeg kon k
 
 Om het bovenstaande voorbeeld in de traditionele financiële wereld te kunnen doen, zou u een enorme hoeveelheid geld nodig hebben. Deze strategieën voor het verdienen van geld zijn alleen toegankelijk voor mensen met bestaande rijkdom. Flash-leningen zijn een voorbeeld van een toekomst waarin het hebben van geld niet noodzakelijkerwijs een voorwaarde is voor het verdienen van geld.
 
-<ButtonLink isSecondary href="https://aave.com/docs/concepts/flash-loans/">
+<ButtonLink isSecondary href="https://aave.com/docs/aave-v3/guides/flash-loans">
   Meer over flash-leningen
 </ButtonLink>
 
@@ -323,7 +323,7 @@ Ethereum is de perfecte basis voor DeFi om een aantal redenen:
 U kunt DeFi zien als verschillende lagen:
 
 1. De blockchain – Ethereum bevat de transactiegeschiedenis en staat van accounts.
-2. De activa – [ETH](/eth/) en de andere tokens (valuta).
+2. De activa – [ETH](/what-is-ether/) en de andere tokens (valuta).
 3. De protocollen – [slimme contracten](/glossary/#smart-contract) die de functionaliteit leveren, bijvoorbeeld een service die het mogelijk maakt om activa gedecentraliseerd uit te lenen.
 4. [De applicaties](/apps/) – de producten die we gebruiken om de protocollen te beheren en te raadplegen.
 
