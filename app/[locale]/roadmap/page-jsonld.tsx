@@ -10,6 +10,10 @@ import {
 } from "@/lib/utils/jsonld"
 import { normalizeUrlForJsonLd } from "@/lib/utils/url"
 
+function stripAngleBrackets(text: string): string {
+  return text.replace(/[<>]/g, "")
+}
+
 export default async function RoadmapPageJsonLD({
   locale,
   contributors,
@@ -94,9 +98,8 @@ export default async function RoadmapPageJsonLD({
             name: t("page-roadmap-faq-1-title"),
             acceptedAnswer: {
               "@type": "Answer",
-              text: `${t("page-roadmap-faq-1-p1")} ${t("page-roadmap-faq-1-p1-continued")} ${t("page-roadmap-faq-1-p2")}`.replace(
-                /<[^>]*>/g,
-                ""
+              text: stripAngleBrackets(
+                `${t("page-roadmap-faq-1-p1")} ${t("page-roadmap-faq-1-p1-continued")} ${t("page-roadmap-faq-1-p2")}`
               ),
             },
           },
@@ -105,9 +108,8 @@ export default async function RoadmapPageJsonLD({
             name: t("page-roadmap-faq-2-title"),
             acceptedAnswer: {
               "@type": "Answer",
-              text: `${t("page-roadmap-faq-2-p1")} ${t("page-roadmap-faq-2-p1-strong")} ${t("page-roadmap-faq-2-p1-continued")} ${t("page-roadmap-faq-2-p2")}`.replace(
-                /<[^>]*>/g,
-                ""
+              text: stripAngleBrackets(
+                `${t("page-roadmap-faq-2-p1")} ${t("page-roadmap-faq-2-p1-strong")} ${t("page-roadmap-faq-2-p1-continued")} ${t("page-roadmap-faq-2-p2")}`
               ),
             },
           },
@@ -116,7 +118,7 @@ export default async function RoadmapPageJsonLD({
             name: t("page-roadmap-faq-3-title"),
             acceptedAnswer: {
               "@type": "Answer",
-              text: t("page-roadmap-faq-3-p1").replace(/<[^>]*>/g, ""),
+              text: stripAngleBrackets(t("page-roadmap-faq-3-p1")),
             },
           },
           {
@@ -124,7 +126,7 @@ export default async function RoadmapPageJsonLD({
             name: t("page-roadmap-faq-4-title"),
             acceptedAnswer: {
               "@type": "Answer",
-              text: t("page-roadmap-faq-4-p1").replace(/<[^>]*>/g, ""),
+              text: stripAngleBrackets(t("page-roadmap-faq-4-p1")),
             },
           },
         ],
