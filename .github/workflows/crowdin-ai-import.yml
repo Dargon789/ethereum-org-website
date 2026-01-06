@@ -22,6 +22,8 @@ on:
 jobs:
   import_translations:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Check out code
         uses: actions/checkout@v6
