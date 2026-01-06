@@ -10,6 +10,16 @@ import {
 } from "@/lib/utils/jsonld"
 import { normalizeUrlForJsonLd } from "@/lib/utils/url"
 
+function stripHtmlTags(input: string): string {
+  let previous: string
+  let current = input
+  do {
+    previous = current
+    current = current.replace(/<[^>]*>/g, "")
+  } while (current !== previous)
+  return current
+}
+
 export default async function WhatIsEthereumPageJsonLD({
   locale,
   lastEditLocaleTimestamp,
@@ -103,9 +113,8 @@ export default async function WhatIsEthereumPageJsonLD({
             name: "What is Ethereum?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: t("page-what-is-ethereum-hero-description-1").replace(
-                /<[^>]*>/g,
-                ""
+              text: stripHtmlTags(
+                t("page-what-is-ethereum-hero-description-1")
               ),
             },
           },
